@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui"
-	xmlns:ui="http://java.sun.com/jsf/facelets">
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:h="http://java.sun.com/jsf/html"
+		xmlns:p="http://primefaces.org/ui"
+		xmlns:ui="http://java.sun.com/jsf/facelets">
 <h:head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>La PosteTN</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
-  <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"/>
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"/>
-  <!-- DataTables -->
-  <link rel="stylesheet" href="../plugins/datatables/dataTables.bootstrap.css"/>
-  <!-- Theme style -->
-  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css"/>
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css"/>
-	    <link rel="icon" href="../dist/img/favicon.ico" type="image/x-icon"/>
+
+	  
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge;charset=utf-8" />
+	  <title>La PosteTN</title>
+	  
+	  <!-- Tell the browser to be responsive to screen width -->
+	  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+	  <!-- Bootstrap 3.3.6 -->
+	  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+	  <!-- Font Awesome -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+	  <!-- Ionicons -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+	  <!-- DataTables -->
+	  <link rel="stylesheet" href="../plugins/datatables/dataTables.bootstrap.css" />
+	  <!-- Theme style -->
+	  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css" />
+	  <!-- AdminLTE Skins. Choose a skin from the css/skins
+	       folder instead of downloading all of them to reduce the load. -->
+	  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css" />
+	   <link rel="icon" href="../dist/img/favicon.ico" type="image/x-icon" />
+	    
+	
+  
 
  
 </h:head>
@@ -59,14 +65,14 @@
 	          <!-- User Account: style can be found in dropdown.less -->
 	          <li class="dropdown user user-menu">
 	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-	              <img src="../dist/img/towid.jpg" class="user-image" alt="User Image"/>
+	              <img src="../dist/img/towid.jpg" class="user-image" alt="User Image" />
 	              
 	              <span class="hidden-xs">BANI Widèd</span>
 	            </a>
 	            <ul class="dropdown-menu">
 	              <!-- User image -->
 	              <li class="user-header">
-	                <img src="../dist/img/towid.jpg" class="img-circle" alt="User Image"/>
+	                <img src="../dist/img/towid.jpg" class="img-circle" alt="User Image" />
 	
 	                <p>
 	                  BANI Widèd - Web Developer
@@ -98,7 +104,7 @@
 	      <!-- Sidebar user panel -->
 	      <div class="user-panel">
 	        <div class="pull-left image">
-	          <img src="../dist/img/towid.jpg" class="img-circle" alt="User Image"/>
+	          <img src="../dist/img/towid.jpg" class="img-circle" alt="User Image" />
 	        </div>
 	        <div class="pull-left info">
 	          <p>BANI Widèd</p>
@@ -115,7 +121,7 @@
 	        <li class="active treeview">
 	          <a href="../Accueil.html">
 	            <i class="fa fa-dashboard"></i> <span>Accueil</span>            
-	          </a>          
+	          </a>        
 	        </li>
 	        
 	        <li class="treeview">
@@ -127,9 +133,9 @@
 	          </a>
 	          <ul class="treeview-menu">
 	            
-	            <li><a outcome="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
-	            <li><a outcome="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-	            <li><a outcome="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
+	            <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
+	            <li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
+	            <li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
 	            
 	          </ul>
 	        </li>
@@ -142,13 +148,14 @@
 		            </span>
 		          </a>
 		          <ul class="treeview-menu">
-		            <li><a outcome="pages/Liste_des_services.html"><i class="fa fa-circle-o"></i> Afficher</a></li>
-		            <li><a outcome="pages/MAJ_Services.html"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
-		            <li><a outcome="pages/Ajouter_Services.html"><i class="fa fa-circle-o"></i> Ajouter</a></li>
+		            <li><a href="pages/Liste_des_services.html"><i class="fa fa-circle-o"></i> Afficher</a></li>
+		            <li><a href="pages/MAJ_Services.html"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+		            <li><a href="pages/Ajouter_Services.html"><i class="fa fa-circle-o"></i> Ajouter</a></li>
 		            
 		            
 		          </ul>
 		    </li>
+	        
 	        <li class="treeview">
 	          <a href="#">
 	            <i class="fa fa-folder"></i> <span>Liste des sous services</span>
@@ -157,19 +164,15 @@
 	            </span>
 	          </a>
 	          <ul class="treeview-menu">
-	            <li><a outcome="Liste_des_sous_services.html"><i class="fa fa-circle-o"></i> Afficher</a></li>
-	            <li><a outcome="MAJ_Services.html"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
-	            <li><a outcome="Ajouter_Produit.xhtml"><i class="fa fa-circle-o"></i> Ajouter</a></li>
+	            <li><a href="Liste_des_sous_services.html"><i class="fa fa-circle-o"></i> Afficher</a></li>
+	            <li><a href="MAJ_Sous_Services.html"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="Ajouter_Sous_Services.html"><i class="fa fa-circle-o"></i> Ajouter</a></li>
 	            
 	            
 	          </ul>
-	    </li>
-	        
+	    	</li>
 	        <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
-	        <li class="header">LABELS</li>
-	        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-	        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-	        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+	        
 	      </ul>
 	    </section>
 	    <!-- /.sidebar -->
@@ -180,7 +183,7 @@
 	    <!-- Content Header (Page header) -->
 	    <section class="content-header">
 	      <h1>
-	        Liste des services
+	        Profil Admin
 	        
 	      </h1>
 	     
@@ -188,39 +191,62 @@
 
 		    <!-- Main content -->
 		    <section class="content">
-		      <div class="box">
-		            <div class="box-body">
-			              <table id="example1" class="table table-bordered table-striped">
-				                <thead>
-				                <tr>
-				                  <th>Adresse IP</th>
-				                  <th>Nom service</th>
-				                  <th>Autorisé</th>
-				                  <th>MAJ</th>
-				                </tr>
-				                </thead>
-				                <tbody>
-				                <tr>
-				                  <td>Trident</td>
-				                  <td>Win 95+</td>
-				                  <td> 4</td>
-				                  <td><a href="#" ><i class="fa fa-edit"></i></a><a href="#" style="margin-left:10px;width:20px;"><i class="fa fa-remove"></i></a></td>
-				                </tr>
-				                <tr>
-				                  <td>Trident</td>
-				                  <td>Win 95+</td>
-				                  <td>5</td>
-				                  <td><a href="#" ><i class="fa fa-edit"></i></a><a href="#" style="margin-left:10px;width:20px;"><i class="fa fa-remove"></i></a></td>
-
-				                </tr>
-				              </tbody>
-			          	 </table>
-		            </div>
-		            
-		            <!-- /.box-body -->
-		      </div>
-		      <!-- /.box -->
-		        
+		    	
+			 	<div class="row">
+			        <div class="col-xs-12">
+			          <div class="box">
+			            <div class="box-header">
+			              
+			
+			              <div class="box-tools">
+			               
+			              </div>
+			            </div>
+			            <!-- /.box-header -->
+			            <div class="box-body table-responsive no-padding">
+			              <table class="table table-hover">
+			                <tr >
+			                  <th width="250px">Nom  </th>
+			                  <td>BANI</td>
+			                  
+			                </tr>
+			                <tr>
+			                  <th>Prénom  </th>
+			                  <td></td>
+			                  
+			                </tr>
+			                <tr>
+			                   <th>Département  </th>
+			                   <td></td>
+			                </tr>
+			               	<tr>
+			                   <th>Emploi  </th>
+			                   <td></td>
+			                </tr>
+			                <tr>
+			                   <th>N°Tel  </th>
+			                   <td></td>
+			                </tr>
+			                <tr>
+			                   <th>Login  </th>
+			                   <td></td>
+			                </tr>
+			                <tr>
+			                   <th>Mot de passe  </th>
+			                   <td></td>
+			                </tr>
+			                <tr>
+			                   <th style="color:green">Modifier  </th>
+			                   <td><p:commandButton type="button" class="btn btn-block btn-default " value="Modifier" style="width:100px;"></p:commandButton></td>
+			                </tr>
+			              </table>
+			            </div>
+			            <!-- /.box-body -->
+			          </div>
+			          <!-- /.box -->
+			        </div>
+			      
+			   </div>  
 		    </section>
 		    <!-- /.content -->
 	</div>  
@@ -240,30 +266,49 @@
 <script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="../bootstrap/js/bootstrap.min.js"></script>
-<!-- DataTables -->
-<script src="../plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="../plugins/datatables/dataTables.bootstrap.min.js"></script>
-<!-- SlimScroll -->
+<!-- Select2 -->
+<script src="../plugins/select2/select2.full.min.js"></script>
+<!-- InputMask -->
+<script src="../plugins/input-mask/jquery.inputmask.js"></script>
+<script src="../plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="../plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<!-- date-range-picker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+<script src="../plugins/daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap datepicker -->
+<script src="../plugins/datepicker/bootstrap-datepicker.js"></script>
+<!-- bootstrap color picker -->
+<script src="../plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+<!-- bootstrap time picker -->
+<script src="../plugins/timepicker/bootstrap-timepicker.min.js"></script>
+<!-- SlimScroll 1.3.0 -->
 <script src="../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- iCheck 1.0.1 -->
+<script src="../plugins/iCheck/icheck.min.js"></script>
 <!-- FastClick -->
 <script src="../plugins/fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="../dist/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../dist/js/demo.js"></script>
-<!-- page script -->
+<!-- Page script -->
+ 
 <script>
-  $(function () {
-    $("#example1").DataTable();
-    $('#example2').DataTable({
-      "paging": true,
-      "lengthChange": false,
-      "searching": false,
-      "ordering": true,
-      "info": true,
-      "autoWidth": false
-    });
-  });
+$(function () {
+  //Initialize Select2 Elements
+  $(".select2").select2();
+
+  //Datemask dd/mm/yyyy
+  $("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
+  //Datemask2 mm/dd/yyyy
+  $("#datemask2").inputmask("mm/dd/yyyy", {"placeholder": "mm/dd/yyyy"});
+  //Money Euro
+  $("[data-mask]").inputmask();
+
+  
+});
 </script>
+
+
 </h:body>
 </html>

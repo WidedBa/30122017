@@ -43,18 +43,18 @@
 
   <header class="main-header">
     <!-- Logo -->
-     <h:link href="" class="logo">
+     <a href="" class="logo">
     	    <img src="dist/img/pt.jpg"  alt="User Image" style="width:50px;heigth:50px;float:left;"/>
     	
       <span class="logo-lg" ><b>Portail</b>SMS</span>
       
-    </h:link>
+    </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
-      <h:link href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
         <span class="sr-only">Toggle navigation</span>
-      </h:link>
+      </a>
 		<div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           <!-- Messages: style can be found in dropdown.less-->
@@ -65,32 +65,11 @@
           
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="dist/img/towid.jpg" class="user-image" alt="User Image"/>
-              
-              <span class="hidden-xs">BANI Widèd</span>
+            <a href="login.xhtml" class="dropdown-toggle" >
+                           
+              <span class="hidden-xs">Déconnecter</span>
             </a>
-            <ul class="dropdown-menu">
-              <!-- User image -->
-              <li class="user-header">
-                <img src="dist/img/towid.jpg" class="img-circle" alt="User Image"/>
-
-                <p>
-                  BANI Widèd - Web Developer
-                  <small>Member since Dec. 2013</small>
-                </p>
-              </li>
-              
-              <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="pull-left">
-                  <h:link href="#" class="btn btn-default btn-flat">Profil</h:link>
-                </div>
-                <div class="pull-right">
-                  <h:link href="#" class="btn btn-default btn-flat">Déconnecter</h:link>
-                </div>
-              </li>
-            </ul>
+            
           </li>
           <!-- Control Sidebar Toggle Button -->
           
@@ -106,75 +85,100 @@
 	      <!-- Sidebar user panel -->
 	      <div class="user-panel">
 	        <div class="pull-left image">
-	          <img src="dist/img/towid.jpg" class="img-circle" alt="User Image"/>
+	          <img src="dist/img/profil.png" class="img-circle" alt="User Image"/>
 	        </div>
 	        <div class="pull-left info">
 	          <p>BANI Widèd</p>
-	          <h:link href="#"><i class="fa fa-circle text-success"></i> Online</h:link>
+	          <p><i class="fa fa-circle text-success"></i> Online</p>
 	        </div>
 	      </div>
 		  <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         
         <li class="active treeview">
-          <h:link href="Accueil.html">
+          <a href="Accueil.html">
             <i class="fa fa-dashboard"></i> <span>Accueil</span>            
-          </h:link>       
+          </a>       
         </li>
         
         <li class="treeview">
-          <h:link href="#">
+          <a href="#">
             <i class="fa fa-folder"></i> <span>Profil</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
-          </h:link>
+          </a>
           <ul class="treeview-menu">
             
-            <li><h:link href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profil</h:link></li>
-            <li><h:link href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Déconnecter</h:link></li>
+            <li><a href="pages/ProfilAdmin.xhtml"><i class="fa fa-circle-o"></i> Profil</a></li>
+            <li><a href="login.xhtml"><i class="fa fa-circle-o"></i> Déconnecter</a></li>
             
             
           </ul>
         
         </li>
         <li class="treeview">
-	          <h:link href="#">
-	            <i class="fa fa-folder"></i> <span>Liste des services</span>
+	          <a href="#">
+	            <i class="fa fa-folder"></i> <span>Services</span>
 	            <span class="pull-right-container">
 	              <i class="fa fa-angle-left pull-right"></i>
 	            </span>
-	          </h:link>
+	          </a>
 	          <ul class="treeview-menu">
-	            <li><h:link href="Liste_des_services"><i class="fa fa-circle-o"></i> Afficher </h:link></li>
-	            <li><h:link href="pages/MAJ_Services.html"><i class="fa fa-circle-o"></i> Mettre à jour</h:link></li>
-	            <li><h:link href="pages/AjouterServ.html"><i class="fa fa-circle-o"></i> Ajouter</h:link></li>
-	            
+	            <li><a href="pages/Liste_des_services"><i class="fa fa-circle-o"></i> Consulter </a></li>
+	            <li><a href="pages/MAJ_Services.html"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="pages/Ajouter_Service.html"><i class="fa fa-circle-o"></i> Ajouter service</a></li>
+	            <li><a href="pages/Ajouter_Produit.html"><i class="fa fa-circle-o"></i> Ajouter produit</a></li>
 	            
 	          </ul>
 	    </li>
-	    <li class="treeview">
-	          <h:link href="#">
-	            <i class="fa fa-folder"></i> <span>Liste des sous services</span>
+	   
+         <li class="treeview">
+	          <a href="#">
+	            <i class="fa fa-folder"></i> <span>Autorisés</span>
 	            <span class="pull-right-container">
 	              <i class="fa fa-angle-left pull-right"></i>
 	            </span>
-	          </h:link>
+	          </a>
 	          <ul class="treeview-menu">
-	            <li><h:link href="pages/Liste_des_sous_services.html"><i class="fa fa-circle-o"></i> Afficher</h:link></li>
-	            <li><h:link href="pages/MAJ_Services.html"><i class="fa fa-circle-o"></i> Mettre à jour</h:link></li>
-	            <li><h:link href="pages/Ajouter_Produit.html"><i class="fa fa-circle-o"></i> Ajouter</h:link></li>
-	            
+	            <li><a href="pages/Liste_des_services"><i class="fa fa-circle-o"></i> Consulter </a></li>
+	            <li><a href="pages/MAJ_Services.html"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="pages/Ajouter_Service.html"><i class="fa fa-circle-o"></i> Ajouter autorisé</a></li>
 	            
 	          </ul>
 	    </li>
-        
-        
+        <li class="treeview">
+	          <a href="#">
+	            <i class="fa fa-folder"></i> <span>Standard</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li><a href="pages/Liste_des_services"><i class="fa fa-circle-o"></i> Consulter </a></li>
+	            <li><a href="pages/MAJ_Services.html"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="pages/Ajouter_Service.html"><i class="fa fa-circle-o"></i> Ajouter user</a></li>
+	            	            
+	          </ul>
+	    </li>
         
         
         <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
         <li class="header">LABELS</li>
-        
+        <li class="treeview">
+	          <a href="#">
+	            <i class="fa fa-folder"></i> <span>Occasions</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li><a href="pages/Liste_des_services"><i class="fa fa-circle-o"></i> Consulter les dates</a></li>
+	            <li><a href="pages/MAJ_Services.html"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="pages/Ajouter_Service.html"><i class="fa fa-circle-o"></i> Ajouter accasion</a></li>
+	            	            
+	          </ul>
+	    </li>
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -227,7 +231,7 @@
               <table class="table table-bordered">
                 <tr>
                   <th style="width: 10px">#</th>
-                  <th>Afficher</th>
+                  <th>Consulter</th>
                   
                 </tr>
                 <tr>
@@ -255,6 +259,12 @@
                   <td>Liste des messages planifiés</td>
                   
                 </tr>
+                <tr>
+                  <td>6.</td>
+                  <td>Liste des occasions</td>
+                  
+                </tr>
+                
               </table>
             </div>
             <!-- /.box-body -->
