@@ -141,9 +141,9 @@
 	            </span>
 	          </a>
 	          <ul class="treeview-menu">
-	            <li><a href="pages/Liste_des_services"><i class="fa fa-circle-o"></i> Consulter </a></li>
-	            <li><a href="pages/MAJ_Services.html"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
-	            <li><a href="pages/Ajouter_Service.html"><i class="fa fa-circle-o"></i> Ajouter autorisé</a></li>
+	            <li><a href="pages/Liste_des_autorises.xhtml"><i class="fa fa-circle-o"></i> Consulter </a></li>
+	            <li><a href="pages/MAJ_Autorises.xhtml"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="pages/Ajouter_Autorise.xhtml"><i class="fa fa-circle-o"></i> Ajouter autorisé</a></li>
 	            
 	          </ul>
 	    </li>
@@ -155,27 +155,69 @@
 	            </span>
 	          </a>
 	          <ul class="treeview-menu">
-	            <li><a href="pages/Liste_des_services"><i class="fa fa-circle-o"></i> Consulter </a></li>
-	            <li><a href="pages/MAJ_Services.html"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
-	            <li><a href="pages/Ajouter_Service.html"><i class="fa fa-circle-o"></i> Ajouter user</a></li>
+	            <li><a href="pages/Liste_Standard.xhtml"><i class="fa fa-circle-o"></i> Consulter </a></li>
+	            <li><a href="pages/MAJ_Standard.xhtml"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="pages/Ajouter_Standard.xhtml"><i class="fa fa-circle-o"></i> Ajouter user</a></li>
 	            	            
 	          </ul>
 	    </li>
         
         
-        <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
-        <li class="header">LABELS</li>
         <li class="treeview">
 	          <a href="#">
-	            <i class="fa fa-folder"></i> <span>Occasions</span>
+	            <i class="fa fa-folder"></i> <span>SMS</span>
 	            <span class="pull-right-container">
 	              <i class="fa fa-angle-left pull-right"></i>
 	            </span>
 	          </a>
 	          <ul class="treeview-menu">
-	            <li><a href="pages/Liste_des_services"><i class="fa fa-circle-o"></i> Consulter les dates</a></li>
-	            <li><a href="pages/MAJ_Services.html"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
-	            <li><a href="pages/Ajouter_Service.html"><i class="fa fa-circle-o"></i> Ajouter accasion</a></li>
+	            <li><a href="pages/Consulter_SMS.xhtml"><i class="fa fa-circle-o"></i> Consulter SMS</a></li>
+	            <li><a href="pages/Consulter_SMS_Planifies.xhtml"><i class="fa fa-circle-o"></i> Consulter SMS planifiés</a></li>
+	            <li><a href="pages/Consulter_SMS_Bloques.xhtml"><i class="fa fa-circle-o"></i> Consulter SMS bloqués</a></li>
+	            	            
+	          </ul>
+	    </li>
+        <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+        <li class="header">LABELS</li>
+        <li class="treeview">
+	          <a href="#">
+	            <i class="fa fa-folder"></i> <span>Voeux</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li><a href="Liste_des_Voeux.xhtml"><i class="fa fa-circle-o"></i> Afficher les dates</a></li>
+	            <li><a href="MAJ_Voeux.xhtml"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="Ajouter_Voeux.xhtml"><i class="fa fa-circle-o"></i> Ajouter voeu</a></li>
+	            	            
+	          </ul>
+	    </li>
+	    <li class="treeview">
+	          <a href="#">
+	            <i class="fa fa-folder"></i> <span>Formation</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li><a href="Liste_des_formations.xhtml"><i class="fa fa-circle-o"></i> Liste des formations</a></li>
+	            <li><a href="MAJ_Formations.xhtml"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="Ajouter_Formation.xhtml"><i class="fa fa-circle-o"></i> Ajouter formation</a></li>
+	            	            
+	          </ul>
+	    </li>
+	    <li class="treeview">
+	          <a href="#">
+	            <i class="fa fa-folder"></i> <span>Publicité</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li><a href="pages/Consulter_Occasion.xhtml"><i class="fa fa-circle-o"></i>Nouveautés</a></li>
+	            <li><a href="pages/MAJ_Occasion.xhtml"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="pages/Ajouter_Occasion.html"><i class="fa fa-circle-o"></i> Ajouter publicité</a></li>
 	            	            
 	          </ul>
 	    </li>
@@ -261,10 +303,19 @@
                 </tr>
                 <tr>
                   <td>6.</td>
-                  <td>Liste des occasions</td>
+                  <td>Liste des voeux</td>
                   
                 </tr>
-                
+                <tr>
+                  <td>7.</td>
+                  <td>Liste des formations</td>
+                  
+                </tr>
+                <tr>
+                  <td>8.</td>
+                  <td>Liste des publicités</td>
+                  
+                </tr>
               </table>
             </div>
             <!-- /.box-body -->
@@ -279,12 +330,19 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
+	<footer class="main-footer">
    
-    <strong>Copyright &copy; 2017 .</strong> All rights
-    reserved.
-  </footer>
-  	
+	    <strong>Copyright &copy; 2017 .</strong> All rights
+	    reserved.
+	</footer>
+  	<aside class="control-sidebar control-sidebar-dark">
+	
+      <!-- Home tab content -->
+      	<div class="tab-pane" style="min-height:550px;" >
+	    
+        <!-- /.control-sidebar-menu -->
+    	</div>
+  	</aside>
 </div>
 <!-- ./wrapper -->
 

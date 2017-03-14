@@ -7,7 +7,7 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 <h:head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>La PosteTN</title>
+<title>La PosteTN | Services</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
   <!-- Bootstrap 3.3.6 -->
@@ -112,8 +112,8 @@
 	      <!-- sidebar menu: : style can be found in sidebar.less -->
 	      <ul class="sidebar-menu">
 	        
-	        <li class="active treeview">
-	          <a href="../Accueil.html">
+	           <li class="active treeview">
+	          <a href="../Accueil.xhtml">
 	            <i class="fa fa-dashboard"></i> <span>Accueil</span>            
 	          </a>          
 	        </li>
@@ -127,49 +127,116 @@
 	          </a>
 	          <ul class="treeview-menu">
 	            
-	            <li><a outcome="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
-	            <li><a outcome="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-	            <li><a outcome="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
+	           <li><a href="ProfilAdmin.xhtml"><i class="fa fa-circle-o"></i> Profil</a></li>
+               <li><a href="../login.xhtml"><i class="fa fa-circle-o"></i> Déconnecter</a></li>
+	            
 	            
 	          </ul>
 	        </li>
 	          
 		    <li class="treeview">
-		          <a href="#">
-		            <i class="fa fa-folder"></i> <span>Liste des services</span>
-		            <span class="pull-right-container">
-		              <i class="fa fa-angle-left pull-right"></i>
-		            </span>
-		          </a>
-		          <ul class="treeview-menu">
-		            <li><a outcome="pages/Liste_des_services.html"><i class="fa fa-circle-o"></i> Afficher</a></li>
-		            <li><a outcome="pages/MAJ_Services.html"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
-		            <li><a outcome="pages/Ajouter_Services.html"><i class="fa fa-circle-o"></i> Ajouter</a></li>
-		            
-		            
-		          </ul>
-		    </li>
-	        <li class="treeview">
 	          <a href="#">
-	            <i class="fa fa-folder"></i> <span>Liste des sous services</span>
+	            <i class="fa fa-folder"></i> <span>Services</span>
 	            <span class="pull-right-container">
 	              <i class="fa fa-angle-left pull-right"></i>
 	            </span>
 	          </a>
 	          <ul class="treeview-menu">
-	            <li><a outcome="Liste_des_sous_services.html"><i class="fa fa-circle-o"></i> Afficher</a></li>
-	            <li><a outcome="MAJ_Services.html"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
-	            <li><a outcome="Ajouter_Produit.xhtml"><i class="fa fa-circle-o"></i> Ajouter</a></li>
+	            <li><a href="Liste_des_Services.xhtml"><i class="fa fa-circle-o"></i> Consulter </a></li>
+	            <li><a href="MAJ_Services.xhtml"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="Ajouter_Services.xhtml"><i class="fa fa-circle-o"></i> Ajouter service</a></li>
+	            <li><a href="Ajouter_Produit.xhtml"><i class="fa fa-circle-o"></i> Ajouter produit</a></li>
 	            
+	          </ul>
+	    	</li>
+	   
+         	<li class="treeview">
+	          <a href="#">
+	            <i class="fa fa-folder"></i> <span>Autorisés</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li><a href="Liste_des_services.xhtml"><i class="fa fa-circle-o"></i> Consulter </a></li>
+	            <li><a href="MAJ_Services.xhtml"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="Ajouter_Service.xhtml"><i class="fa fa-circle-o"></i> Ajouter autorisé</a></li>
 	            
 	          </ul>
 	    </li>
-	        
-	        <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
-	        <li class="header">LABELS</li>
-	        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-	        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-	        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+        <li class="treeview">
+	          <a href="#">
+	            <i class="fa fa-folder"></i> <span>Standard</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li><a href="Liste_des_services.xhtml"><i class="fa fa-circle-o"></i> Consulter </a></li>
+	            <li><a href="MAJ_Services.xhtml"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="Ajouter_Service.xhtml"><i class="fa fa-circle-o"></i> Ajouter user</a></li>
+	            	            
+	          </ul>
+	    </li>
+        
+        <li class="treeview">
+	          <a href="#">
+	            <i class="fa fa-folder"></i> <span>SMS</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li><a href="pages/Consulter_SMS.xhtml"><i class="fa fa-circle-o"></i> Consulter SMS</a></li>
+	            <li><a href="pages/Consulter_SMS_Planifies.xhtml"><i class="fa fa-circle-o"></i> Consulter SMS planifiés</a></li>
+	            <li><a href="pages/Consulter_SMS_Bloques.xhtml"><i class="fa fa-circle-o"></i> Consulter SMS bloqués</a></li>
+	            	            
+	          </ul>
+	    </li>
+        <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+        <li class="header">LABELS</li>
+        <li class="treeview">
+	          <a href="#">
+	            <i class="fa fa-folder"></i> <span>Voeux</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li><a href="Liste_des_Voeux.xhtml"><i class="fa fa-circle-o"></i> Afficher les dates</a></li>
+	            <li><a href="MAJ_Voeux.xhtml"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="Ajouter_Voeux.xhtml"><i class="fa fa-circle-o"></i> Ajouter voeu</a></li>
+	            	            
+	          </ul>
+	    </li>
+	    <li class="treeview">
+	          <a href="#">
+	            <i class="fa fa-folder"></i> <span>Formation</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li><a href="Liste_des_formations.xhtml"><i class="fa fa-circle-o"></i> Liste des formations</a></li>
+	            <li><a href="MAJ_Formations.xhtml"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="Ajouter_Formation.xhtml"><i class="fa fa-circle-o"></i> Ajouter formation</a></li>
+	            	            
+	          </ul>
+	    </li>
+	    <li class="treeview">
+	          <a href="#">
+	            <i class="fa fa-folder"></i> <span>Publicité</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li><a href="pages/Consulter_Occasion.xhtml"><i class="fa fa-circle-o"></i>Nouveautés</a></li>
+	            <li><a href="pages/MAJ_Occasion.xhtml"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="pages/Ajouter_Occasion.html"><i class="fa fa-circle-o"></i> Ajouter publicité</a></li>
+	            	            
+	          </ul>
+	    </li>
 	      </ul>
 	    </section>
 	    <!-- /.sidebar -->

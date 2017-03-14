@@ -9,7 +9,7 @@
 
 	
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge;charset=utf-8"/>
-	  <title>La PosteTN</title>
+	  <title>La PosteTN | Produit</title>
 	  
 	  <!-- Tell the browser to be responsive to screen width -->
 	  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
@@ -98,7 +98,7 @@
 	      <ul class="sidebar-menu">
 	        
 	        <li class="active treeview">
-	          <a href="../Accueil.html">
+	          <a href="../Accueil.xhtml">
 	            <i class="fa fa-dashboard"></i> <span>Accueil</span>            
 	          </a>          
 	        </li>
@@ -129,13 +129,13 @@
 	          <ul class="treeview-menu">
 	            <li><a href="Liste_des_Services.xhtml"><i class="fa fa-circle-o"></i> Consulter </a></li>
 	            <li><a href="MAJ_Services.xhtml"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
-	            <li><a href="Ajouter_Service.xhtml"><i class="fa fa-circle-o"></i> Ajouter service</a></li>
+	            <li><a href="Ajouter_Services.xhtml"><i class="fa fa-circle-o"></i> Ajouter service</a></li>
 	            <li><a href="Ajouter_Produit.xhtml"><i class="fa fa-circle-o"></i> Ajouter produit</a></li>
 	            
 	          </ul>
-	    </li>
+	    	</li>
 	   
-         <li class="treeview">
+         	<li class="treeview">
 	          <a href="#">
 	            <i class="fa fa-folder"></i> <span>Autorisés</span>
 	            <span class="pull-right-container">
@@ -164,23 +164,66 @@
 	          </ul>
 	    </li>
         
-        
-        <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
-        <li class="header">LABELS</li>
         <li class="treeview">
 	          <a href="#">
-	            <i class="fa fa-folder"></i> <span>Occasions</span>
+	            <i class="fa fa-folder"></i> <span>SMS</span>
 	            <span class="pull-right-container">
 	              <i class="fa fa-angle-left pull-right"></i>
 	            </span>
 	          </a>
 	          <ul class="treeview-menu">
-	            <li><a href="Liste_des_services.xhtml"><i class="fa fa-circle-o"></i> Consulter les dates</a></li>
-	            <li><a href="MAJ_Services.xhtml"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
-	            <li><a href="Ajouter_Service.xhtml"><i class="fa fa-circle-o"></i> Ajouter accasion</a></li>
+	            <li><a href="pages/Consulter_SMS.xhtml"><i class="fa fa-circle-o"></i> Consulter SMS</a></li>
+	            <li><a href="pages/Consulter_SMS_Planifies.xhtml"><i class="fa fa-circle-o"></i> Consulter SMS planifiés</a></li>
+	            <li><a href="pages/Consulter_SMS_Bloques.xhtml"><i class="fa fa-circle-o"></i> Consulter SMS bloqués</a></li>
 	            	            
 	          </ul>
 	    </li>
+        <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+        <li class="header">LABELS</li>
+        <li class="treeview">
+	          <a href="#">
+	            <i class="fa fa-folder"></i> <span>Voeux</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li><a href="Liste_des_Voeux.xhtml"><i class="fa fa-circle-o"></i> Afficher les dates</a></li>
+	            <li><a href="MAJ_Voeux.xhtml"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="Ajouter_Voeux.xhtml"><i class="fa fa-circle-o"></i> Ajouter voeu</a></li>
+	            	            
+	          </ul>
+	    </li>
+	    <li class="treeview">
+	          <a href="#">
+	            <i class="fa fa-folder"></i> <span>Formation</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li><a href="Liste_des_formations.xhtml"><i class="fa fa-circle-o"></i> Liste des formations</a></li>
+	            <li><a href="MAJ_Formations.xhtml"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="Ajouter_Formation.xhtml"><i class="fa fa-circle-o"></i> Ajouter formation</a></li>
+	            	            
+	          </ul>
+	    </li>
+	    <li class="treeview">
+	          <a href="#">
+	            <i class="fa fa-folder"></i> <span>Publicité</span>
+	            <span class="pull-right-container">
+	              <i class="fa fa-angle-left pull-right"></i>
+	            </span>
+	          </a>
+	          <ul class="treeview-menu">
+	            <li><a href="pages/Consulter_Occasion.xhtml"><i class="fa fa-circle-o"></i>Nouveautés</a></li>
+	            <li><a href="pages/MAJ_Occasion.xhtml"><i class="fa fa-circle-o"></i> Mettre à jour</a></li>
+	            <li><a href="pages/Ajouter_Occasion.html"><i class="fa fa-circle-o"></i> Ajouter publicité</a></li>
+	            	            
+	          </ul>
+	    </li>
+	    
+
 	      </ul>
 	    </section>
 	    <!-- /.sidebar -->
@@ -191,7 +234,7 @@
 	    <!-- Content Header (Page header) -->
 	    <section class="content-header">
 	      <h1>
-	        Ajouter sous_service(produit)
+	        Ajouter produit (sous_service)
 	        
 	      </h1>
 	     
@@ -199,52 +242,63 @@
 
 		    <!-- Main content -->
 		    <section class="content">
-		     	<div class="col-md-6">
-			     	<div class="box box-success">
-			            <div class="box-header with-border">
-			              <h3 class="box-title">Ajout</h3>
-			        	</div>
-			        	<div class="box-body">
-				              			        
-				            <div class="form-group">
-				            	<label>Service :</label>
-				            	<select class="form-control">
-				                    <option>Mandat</option>
-				                    <option>CCP</option>
-				                    <option>Commercial</option>
-				                    <option>option 4</option>
-				                    <option>option 5</option>
-				                 </select>
-				                 <br/>
-				              	<p:outputLabel>Code produit :</p:outputLabel>
-				            	<p:inputText class="form-control input-sm" type="text" placeholder=""/>
-				              	<br/>
-				              	<p:outputLabel>Nom produit :</p:outputLabel>
-				            	<p:inputText class="form-control input-sm" type="text" placeholder=""/>
-				              		
-				                
-				                <!-- /.input group -->
-				             </div>
-			             
-		           		 <!-- /.box-body -->
-	          			<p:commandButton type="button" class="btn btn-block btn-success" value="Ajouter" />
-	          			</div>
-	          		</div>
+		     	<div class="row" >
+			     	<div class="col-md-6">
+				     	<div class="box box-success">
+				            <div class="box-header with-border">
+				              <h3 class="box-title">Ajout</h3>
+				        	</div>
+				        	<div class="box-body">
+					              			        
+					            <div class="form-group">
+					            	<label>Service :</label>
+					            	<select class="form-control">
+					                    <option>Mandat</option>
+					                    <option>CCP</option>
+					                    <option>Commercial</option>
+					                    <option>option 4</option>
+					                    <option>option 5</option>
+					                 </select>
+					                 <br/>
+					              	<p:outputLabel>Code produit :</p:outputLabel>
+					            	<p:inputText class="form-control input-sm" type="text" placeholder=""/>
+					              	<br/>
+					              	<p:outputLabel>Nom produit :</p:outputLabel>
+					            	<p:inputText class="form-control input-sm" type="text" placeholder=""/>
+					              		
+					                
+					                <!-- /.input group -->
+					             </div>
+					             
+					             
+				             
+			           		 <!-- /.box-body -->
+		          			<p:commandButton type="button" class="btn btn-block btn-success" value="Ajouter" />
+		          			</div>
+		          		</div>
+		          		
+		          		
+		          	</div>
 	          		
-	          		
-	          	</div>
-          		
- 
+ 				</div>
 		    </section>
 		    <!-- /.content -->
 	</div>  
 	<!-- /.content-wrapper -->
-  <footer class="main-footer">
-   
-    <strong>Copyright &copy; 2017 .</strong> All rights
-    reserved.
-  </footer>
-
+	<footer class="main-footer">
+	   
+	    <strong>Copyright &copy; 2017 .</strong> All rights reserved.
+	</footer>
+	
+	<aside class="control-sidebar control-sidebar-dark">
+	
+      <!-- Home tab content -->
+      	<div class="tab-pane" style="min-height:550px;" >
+	    
+        <!-- /.control-sidebar-menu -->
+		</div>
+  	</aside>	  
+	
   
 </div>
 <!-- ./wrapper -->
